@@ -1,5 +1,6 @@
 # Decision-Tree-Entropy-Analysis
 You are asked to use a decision tree model to predict the usage of a car.  The data is the claim_history.csv which has 10,302 observations.  The analysis specifications are:
+
 Target Variable
 •	CAR_USE. The usage of a car.  This variable has two categories which are Commercial and Private.  The Commercial category is the Event value.
 
@@ -9,6 +10,7 @@ Nominal Predictor
 
 Ordinal Predictor
 •	EDUCATION. The education level of the car owner.  This variable has five ordered categories which are Below High School < High School < Bachelors < Masters < Doctors.
+
 Analysis Specifications
 •	Partition. Specify the target variable as the stratum variable. Use stratified simple random sampling to put 75% of the records into the Training partition, and the remaining 25% of the records into the Test partition.  The random state is 60616.
 •	Decision Tree.  The maximum number of branches is two.  The maximum depth is two.  The split criterion is the Entropy metric.
