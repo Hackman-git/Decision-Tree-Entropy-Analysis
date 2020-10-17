@@ -15,14 +15,14 @@ Analysis Specifications
 •	Partition. Specify the target variable as the stratum variable. Use stratified simple random sampling to put 75% of the records into the Training partition, and the remaining 25% of the records into the Test partition.  The random state is 60616.
 •	Decision Tree.  The maximum number of branches is two.  The maximum depth is two.  The split criterion is the Entropy metric.
 
-Question 1 (20 points)
+Question 1
 Please provide information about your Data Partition step.  You may call the train_test_split() function in the sklearn.model_selection module in your code.
 a)	(5 points). Please provide the frequency table (i.e., counts and proportions) of the target variable in the Training partition?
 b)	(5 points). Please provide the frequency table (i.e., counts and proportions) of the target variable in the Test partition?
 c)	(5 points). What is the probability that an observation is in the Training partition given that CAR_USE = Commercial?
 d)	(5 points). What is the probability that an observation is in the Test partition given that CAR_USE = Private?
 
-Question 2 (40 points)
+Question 2
 Please provide information about your decision tree.  You will need to write your own Python program to find the answers.
 a)	(5 points). What is the entropy value of the root node?
 b)	(5 points). What is the split criterion (i.e., predictor name and values in the two branches) of the first layer?
@@ -31,7 +31,7 @@ d)	(5 points). How many leaves?
 e)	(10 points). Describe all your leaves.  Please include the decision rules and the counts of the target values.
 f)	(5 points). What is the Kolmogorov-Smirnov statistic and the event probability cutoff value? 
 
-Question 3 (40 points)
+Question 3
 Please apply your decision tree to the Test partition and then provide the following information. You will choose whether to call sklearn functions or write your own Python program to find the answers.
 a)	(5 points). Use the proportion of target Event value in the training partition as the threshold, what is the Misclassification Rate in the Test partition?
 b)	(5 points). Use the Kolmogorov-Smirnov event probability cutoff value in the training partition as the threshold, what is the Misclassification Rate in the Test partition?
